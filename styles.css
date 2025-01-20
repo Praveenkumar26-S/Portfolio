@@ -1,0 +1,107 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffffff, #f1f1f1);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #004d99;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+header .contact a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+header .contact a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 30px 15px;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: slideIn 1.5s ease-in-out;
+}
+section h2 {
+    font-size: 2em;
+    color: #004d99;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+ul li::before {
+    content: '\2022';
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #004d99;
+    color: #fff;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
